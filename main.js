@@ -1,7 +1,9 @@
 var app = new Vue({
   el: '#app',
   data: {
-    name: 'Timi'
+    name: 'Timi',
+    blog: 'https://tesla9527.github.io/',
+    blogTag: '<a href="https://tesla9527.github.io/">Tesla Blog</a>'
   },
   methods:{
   	greet: function(time) {
