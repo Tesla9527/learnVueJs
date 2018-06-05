@@ -6,14 +6,15 @@
 	<link href="styles.css" rel="stylesheet" />
 </head>
 <body>
-<h1>Events</h1>
+<h1>Event Modifiers</h1>
 <div id="app">
-	<button @click="add(1)">Add 1 year</button>
+	<button @click.once="add(1)">Add 1 year</button>
 	<button @click="subtract(1)">Subtract 1 year</button>
 	<button v-on:dblclick="add(10)">Add 10 year</button>
 	<button v-on:dblclick="subtract(10)">Subtract 10 year</button>	
   <p>My age is {{age}}</p>
   <div id="canvas" v-on:mousemove="updateXY">{{x}},{{y}}</div>
+  <a v-on:click.prevent="click" href="https://tesla9527.github.io/">Tesla's blog</a>
 </div>
 </body>
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
