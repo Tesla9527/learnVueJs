@@ -6,12 +6,14 @@
 	<link href="styles.css" rel="stylesheet" />
 </head>
 <body>
-<h1>Keyboard Events</h1>
+<h1>Two-Way Data Binding</h1>
 <div id="app">
 	<label>Name:</label>
-  	<input type="text" v-on:keyup.alt.enter="logName">
+  	<input type="text" v-model="name">
+  	<span>{{ name }}</span>
   	<label>Age:</label>
-  	<input type="text" v-on:keyup.alt.enter="logAge">
+  	<input type="text" v-model="age">
+  	<span>{{ age }}</span>
 </div>
 </body>
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
