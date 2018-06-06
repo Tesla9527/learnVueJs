@@ -6,15 +6,12 @@
 	<link href="styles.css" rel="stylesheet" />
 </head>
 <body>
-<h1>Event Modifiers</h1>
+<h1>Keyboard Events</h1>
 <div id="app">
-	<button @click.once="add(1)">Add 1 year</button>
-	<button @click="subtract(1)">Subtract 1 year</button>
-	<button v-on:dblclick="add(10)">Add 10 year</button>
-	<button v-on:dblclick="subtract(10)">Subtract 10 year</button>	
-  <p>My age is {{age}}</p>
-  <div id="canvas" v-on:mousemove="updateXY">{{x}},{{y}}</div>
-  <a v-on:click.prevent="click" href="https://tesla9527.github.io/">Tesla's blog</a>
+	<label>Name:</label>
+  	<input type="text" v-on:keyup.alt.enter="logName">
+  	<label>Age:</label>
+  	<input type="text" v-on:keyup.alt.enter="logAge">
 </div>
 </body>
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
