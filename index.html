@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Learn VueJs</title>
+	<link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+<h1>Keyboard Events</h1>
+<div id="app">
+	<label>Name:</label>
+  	<input type="text" v-on:keyup.alt.enter="logName">
+  	<label>Age:</label>
+  	<input type="text" v-on:keyup.alt.enter="logAge">
+</div>
+</body>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="main.js"></script>	
+</html>
